@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        fieldset {
+            margin-top: 20px;
+        }
+        
+        fieldset div {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            border: 10px solid #000;
+            padding: 5px;
+            background-color: aqua;
+        }
+        
+        .border-box {
+            background-clip: border-box;
+        }
+        
+        .padding-box {
+            background-clip: padding-box;
+        }
+        
+        .content-box {
+            background-clip: content-box;
+        }
+        
+        .text {
+            display: inline-block;
+            font-size: 60px;
+            line-height: 1;
+            -webkit-background-clip: text;
+            color: rgba(255, 255, 255, 0.5);
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>CSS3 background-clip 属性</legend>
+        <pre>
+    - 规定背景的绘制区域
+    - 值：
+        + border-box    背景被裁剪到边框盒（默认）
+        + padding-box   背景被裁剪到内边距框。
+        + content-box   背景被裁剪到内容框。
+        + text          背景被裁剪为文字的前景色
+        </pre>
+        <div class="border-box"></div>
+        <div class="padding-box"></div>
+        <div class="content-box"></div>
+        <span class="text">哈哈哈</span>
+    </fieldset>
+    <fieldset>
+        <legend>CSS3 text-fill-color 属性</legend>
+        <pre>
+            - 会覆盖color所定义的字体颜色
+            - <a href="http://demo.doyoe.com/css3/text-fill-color/">详情查看</a>
+        </pre>
+    </fieldset>
+    <fieldset>
+        <legend>CSS3 linear-gradiend()</legend>
+        <pre>
+            - 函数用于创建一个表示两种或多种颜色线性渐变的图片
+            - <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/linear-gradient">详情查看</a>
+            - <a href="http://www.zhangxinxu.com/wordpress/2013/09/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3css3-gradient%E6%96%9C%E5%90%91%E7%BA%BF%E6%80%A7%E6%B8%90%E5%8F%98/">深入理解CSS3 gradient斜向线性渐变</a>
+        </pre>
+    </fieldset>
+</body>
+
+</html>
